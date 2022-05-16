@@ -34,8 +34,7 @@ type Auth {
   
 type Query {
     me: User
-  users: [User]
-  user(username: String!): User  
+   
 }
 
 input BookDataContent{
@@ -44,7 +43,6 @@ input BookDataContent{
   title: String
   bookId: String
   image: String
-  link: String
 }
 
   type Mutation {

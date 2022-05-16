@@ -4,19 +4,6 @@ const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
-      user: async (parent, { username }) => {
-        return User.findOne({ username })
-            .select('-__v -password')
-            .populate('friends')
-            .populate('thoughts');
-
-    },
-      users: async () => {
-        return User.find()
-            .select('-__v -password')
-            .populate('friends')
-            .populate('thoughts');
-      },
       me: async (parent, args, context) => {
       // console.log(context.tokenDeets);
       // console.table(context.user);
