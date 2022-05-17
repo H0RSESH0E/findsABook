@@ -4,7 +4,8 @@ const { typeDefs, resolvers } = require('./schemas');
 
 const path = require('path');
 const db = require('./config/connection');
-const routes = require('./routes');
+
+require('dotenv').config();
 
 const { authMiddleware } = require('./utils/auth');
 const app = express();
@@ -19,7 +20,6 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context:  authMiddleware
-
 });
 
 // if we're in production, serve client/build as static assets

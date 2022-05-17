@@ -4,9 +4,11 @@ const { formatDate } = require('./formatDate.js');
 require('dotenv').config();
 
 // set token secret and expiration date
+// personal secret phrases are kept safe within the .env file
 const secret = process.env.superSecret;
-const expiration = '12h';
+const expiration = '1h';
 
+// Middleware activities log outcomes to the server console for improved UX
 module.exports = {
   // This function runs within the ApolloServer and returns an object to be stored as the context which resolver functions can access 
   authMiddleware: function ({ req, res, next }) {
