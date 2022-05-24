@@ -8,7 +8,7 @@
 #### [Description](#description)  -  [Installation](#installation)  -  [Usage](#usage) - [License](#license) - [Contributing](#contributing) - [Tests](#tests) - [Questions](#questions)
 &nbsp;  
 ## Description  
-This application was designed by the good folks at Triology Education Services and refactored to use a GraphQL Server and Client API by H0RSESH0E.  Delivering a private repository for your favourite Google Books, the functionality is simple and sweet.  
+This application uses a GraphQL Server and Client API, delivering a private repository for your favourite Google Books, the functionality is simple and sweet.  
 &nbsp;  
 <img src="./client/public/screenshot.png" alt="Save-A-Book application screenshot" width="600"/>    
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)   
